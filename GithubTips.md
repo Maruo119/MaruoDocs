@@ -1,5 +1,14 @@
 # Github
 
+## 競合エラー
+#### 手動でロックファイルを削除する
+このファイルを消すことで、Gitが再度コマンドを受け付けられるようになります。ターミナルで以下のコマンドを実行してください。
+
+
+```bash
+del "C:\Users\XXXX\OneDrive\ドキュメント\Claude\Projects\PlaywrightCloudExecuter\.git\index.lock"
+```
+
 ## ローカルにあるフォルダの内容をそのままGithubに反映（アップロード）したい
 
 #### ステップ1：対象のフォルダに移動する
