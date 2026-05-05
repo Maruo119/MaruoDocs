@@ -60,3 +60,24 @@ git remote add origin https://github.com/Maruo119/PlaywrightCloudExecuter.git
 ```bash
 git push -u origin main
 ```
+
+
+### .gitignoreに後で追加した場合の現ファイルの除外設定
+#### git の追跡を削除（ファイルはローカルに残す）
+```bash
+git rm --cached ecs-task-definition.json
+```
+
+#### commit
+```bash
+git commit -m "fix: ecs-task-definition.json をgit追跡から除外
+
+.gitignore に登録済みのため、git の追跡を解除します
+ローカルファイルは保持されます
+"
+```
+
+#### push
+```bash
+git push origin feature/aws-step2-3-automation
+```
